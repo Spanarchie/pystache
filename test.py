@@ -13,7 +13,4 @@ def find_tests():
     return unittest.TestLoader().discover('pystache')
 
 if __name__ == '__main__':
-    lister = find_tests()
-    for x in lister:
-        print x
     runner().run(find_tests())
